@@ -6,12 +6,16 @@
 }
 
 body {
+  font-weight: 400;
   color: #2e2f42;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
 }
 
 :root {
   --brand-color: #272734;
+  --blu-color: #4d5ae5;
+  --brand-color2: #2e2f42;
+  --white-color: #fff;
 }
 
 .logo {
@@ -22,11 +26,11 @@ body {
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #2e2f42;
+  color: var(--brand-color2);
 }
 
 .logo span {
-  color: #4d5ae5;
+  color: var(--blu-color);
 }
 
 header {
@@ -46,19 +50,16 @@ header {
 }
 
 .header__menu__list a {
-  color: #2e2f42;
+  color: var(--brand-color2);
 }
 
-.header__menu__link:hover {
-  color: #434455;
-}
-
+.header__menu__link:hover,
 .header__menu__link:focus {
-  color: #434455;
+  color: var(--brand-color);
 }
 
 .header__menu__link:active {
-  color: #4d5ae5;
+  color: var(--blu-color);
 }
 
 .header__contact {
@@ -69,20 +70,17 @@ header {
   color: var(--brand-color);
 }
 
-.header__contact__link:hover {
-  color: #434455;
-}
-
+.header__contact__link:hover,
 .header__contact__link:focus {
-  color: #434455;
+  color: var(--brand-color);
 }
 
 .header__contact__link:active {
-  color: #4d5ae5;
+  color: var(--blu-color);
 }
 
 .main__header {
-  background-color: #2e2f42;
+  background-color: var(--brand-color2);
 }
 
 .main__header h1 {
@@ -91,7 +89,7 @@ header {
   line-height: 1.08;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .main__header button {
@@ -99,12 +97,12 @@ header {
   height: 51px;
   left: 635px;
   top: 432px;
-  background: #4d5ae5;
+  background: var(--blu-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   font-size: 16px;
   line-height: 1.19;
-  color: #ffffff;
+  color: var(--white-color);
   border: none;
   cursor: pointer;
 }
@@ -127,7 +125,6 @@ header {
 }
 
 .main__text p {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -157,7 +154,7 @@ header {
 }
 
 .teammate h3 {
-  font-weight: 6003
+  font-weight: 6003;
   font-size: 20px;
   line-height: 1.2;
   text-align: center;
@@ -165,7 +162,6 @@ header {
 }
 
 .teammate p {
-  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
@@ -174,11 +170,10 @@ header {
 }
 
 footer {
-  background-color: #2e2f42;
+  background-color: var(--brand-color2);
 }
 
 footer p {
-  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
@@ -199,20 +194,16 @@ footer p {
   cursor: pointer;
 }
 
-.portfolio__buttons button:hover {
+.portfolio__buttons button:hover, .portfolio__buttons button:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.portfolio__buttons button:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
 .portfolio__buttons button:active {
   background: #4d5ae5;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .portfolio__item h3 {
@@ -223,7 +214,6 @@ footer p {
 }
 
 .portfolio__item p {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
