@@ -7,15 +7,19 @@
 
 body {
   font-weight: 400;
-  color: #2e2f42;
+  color: var(--brand-color2);
   font-family: "Roboto", sans-serif;
 }
 
 :root {
   --brand-color: #272734;
   --blu-color: #4d5ae5;
+  --blu-color2:#404bbf;
   --brand-color2: #2e2f42;
   --white-color: #fff;
+  --white-color2: #f4f4fd;
+  --white-color3: #e7e9fc;
+  
 }
 
 .logo {
@@ -113,7 +117,7 @@ header {
 }
 
 .main__header button:active {
-  background: #404bbf;
+  background: var(--blu-color2);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -141,7 +145,7 @@ header {
 }
 
 .main__team {
-  background-color: #f4f4fd;
+  background-color: var(--white-color2);
 }
 
 .main__team h3 {
@@ -177,20 +181,20 @@ footer p {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  color: #e7e9fc;
+  color: var(--white-color3);
 }
 
 .logo__footer {
-  color: #f4f4fd;
+  color: var(--white-color2);
 }
 
 /* Portfolio */
 
 .portfolio__buttons button {
-  background: #f4f4fd;
-  border: 1px solid #e7e9fc;
+  background: var(--white-color2);
+  border: 1px solid var(--white-color3);
   border-radius: 4px;
-  color: #4d5ae5;
+  color: var(--blu-color);
   cursor: pointer;
 }
 
@@ -200,7 +204,7 @@ footer p {
 }
 
 .portfolio__buttons button:active {
-  background: #4d5ae5;
+  background: var(--blu-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   color: var(--white-color);
