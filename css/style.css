@@ -14,12 +14,11 @@ body {
 :root {
   --brand-color: #272734;
   --blu-color: #4d5ae5;
-  --blu-color2:#404bbf;
+  --blu-color2: #404bbf;
   --brand-color2: #2e2f42;
   --white-color: #fff;
   --white-color2: #f4f4fd;
   --white-color3: #e7e9fc;
-  
 }
 
 .logo {
@@ -198,13 +197,16 @@ footer p {
   cursor: pointer;
 }
 
-.portfolio__buttons button:hover, .portfolio__buttons button:focus {
+.portfolio__buttons button:hover,
+.portfolio__buttons button:focus {
+  background: var(--blu-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  color: var(--white-color);
 }
 
 .portfolio__buttons button:active {
-  background: var(--blu-color);
+  background: var(--blu-color2);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   color: var(--white-color);
